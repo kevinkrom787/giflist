@@ -59,5 +59,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }));
     chrome.storage.local.set({ tasks: JSON.stringify(tasks) });
   }
+
+  function countTasksInStorage(callback) {
+    chrome.storage.local.get('tasks', function(result) {
+      if (chrome.runtime.lastError) {
+        // Handle error if any
+        console.error(chrome.runtime.lastError);
+        callback(0); // Return 0 tasks
+        return;
+      }
+      
+      const tasksString = result.tasks;
+      if (tasksString) {
+        try {
+          const tasks = JSON.parse(tasksString);
+          const taskCount = tasks.length;
+          callback(taskCount);
+        } catch (error) {
+          console.error('Error parsing tasks from local storage:', error);
+          callback(0); // Return 0 tasks
+        }
+      } else {
+        callback(0); // Return 0 tasks
+      }
+    });
+  }
+  
+  countTasksInStorage(function(taskCount) {
+    console.log('Number of tasks in local storage:', taskCount);
+    // Do something with the task count
+  });
+  
   
 });
+
+
