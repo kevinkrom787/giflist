@@ -11,8 +11,8 @@
     "newtab": "popup.html"
   },
   "icons": {
-    "16": "metamask.png",
-    "48": "metamask.png",
-    "128": "metamask.png"
+    "16": "troll.png",
+    "48": "troll.png",
+    "128": "troll.png"
   }
 }
