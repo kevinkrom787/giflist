@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Todo List Extension",
+  "name": "Gif-list",
   "version": "1.0",
   "permissions": ["storage"],
   "background": {
