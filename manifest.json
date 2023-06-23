@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Todo List Extension",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "popup.html"
+  },
+  "icons": {
+    "16": "metamask.png",
+    "48": "metamask.png",
+    "128": "metamask.png"
+  }
+}
