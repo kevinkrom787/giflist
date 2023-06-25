@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   
   countTasksInStorage(function(taskCount) {
-    console.log('Number of tasks in local storage:', taskCount);
-    // Do something with the task count
-  });
-  
+  console.log('Number of tasks in local storage:', taskCount);
+  // Do something with the task count
+});
+
   
 });
 

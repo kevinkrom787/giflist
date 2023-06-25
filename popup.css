@@ -1,1 +1,30 @@
-.css
+body {
+    min-width: 200px;
+    min-height: 150px;
+    padding: 20px;
+  }
+  
+  #add-task {
+    margin-top: 10px;
+  }
+  
+  #task-input {
+    width: 200px;
+  }
+  
+  button {
+    margin-left: 5px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+  div.image {
+    content:url(https://knowyourmeme.com/memes/trollface/photos);
+  }
+  
+  button {
+    font-size: 12px;
+  }
+  
