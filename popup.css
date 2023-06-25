@@ -19,10 +19,6 @@ body {
   li {
     margin-bottom: 5px;
   }
-
-  div.image {
-    content:url(https://knowyourmeme.com/memes/trollface/photos);
-  }
   
   button {
     font-size: 12px;
